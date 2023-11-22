@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Tugas </title>
+
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" >
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="assets/images/gallery/AIS.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="white"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Tugas PWA">
+    <meta name="msapplication-TileImage" content="assets/images/gallery/Ais.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-messaging.js"></script>
+</head>
+ 
+<body>
+    <div class="container-fluid overcover">
+        <div class="container profile-box p-0">
+            <div class="row">
+                <div class="col-md-4 left-co">
+                    <div class="left-side">
+                        <div class="profile-info">
+                            <img src="assets/images/gallery/aku.jpg" alt="">
+                            <!-- <h3>Nur Aisyah</h3>
+                            <span>Mahasiswa</span> -->
+                        </div>
+                        <h4 class="ltitle">CONTACT </h4>
+                        <ul class="row social-link no-margin">
+                            <li><i class="fab fa-facebook-f"></i> &nbsp; : N Aisyah</li>
+                            <li><i class="fab fa-google-plus-g"></i>&nbsp; : nais4253@gmail.com</li>
+                            <li><i class="fab fa-instagram fa-x"></i>&nbsp; : _naissyahh</li>
+                            <li><i class="fab fa-whatsapp fa-x" ></i>&nbsp; : 082322681895</li>
+                        </ul>
+                        <div class="detail">
+                           <!-- Nama : Nur Aisyah -->
+                         </div>
+                        <div class="contact-box pb0">
+                           
+                            <div class="detail">
+                               <!-- Tempat/Tanggal Lahir : Tegal, 14 july 2003 -->
+                            </div>
+                        </div>
+                        <div class="contact-box">
+                            <div class="icon">
+                                <!-- <i class=></i> -->
+                            </div>
+                            <div class="detail">
+                               <!-- Muarareja,Tegal -->
+                            </div>
+                        </div>
+                        <div class="refer-cov">
+                            <!-- <b>Jonney Smith</b>
+                            <p>CEO Casinocarol</p>
+                            <span>p +00 890 1232 8767</span> -->
+                        </div>
+                        <div class="refer-cov">
+                            <!-- <b>Jonney Smith</b>
+                            <p>System Administrator</p>
+                            <span>p +00 890 1232 8767</span> -->
+                        </div>
+                        <h4 class="ltitle">Hobbies</h4>
+                        <ul class="hoby row no-margin">
+                            <li><i class="fas fa-pencil-alt"></i> <br> Writing</li>
+                            <li><i class="fas fa-bicycle"></i> <br> Cycling</li>
+                            <li><i class="fas fa-futbol"></i> <br> Football</li>
+                            <li><i class="fas fa-film"></i><br> Movies</li>
+                            <li><i class="fas fa-plane-departure"></i> <br>Travel</li>
+                            <li><i class="fas fa-gamepad"></i> <br> Games</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-7 rt-div">
+                    <div class="rit-cover">
+                        <div class="hotkey">
+                            <h1 class="">Nur Aisyah </h1>
+                            <small>Mahasiswa</small>
+                        </div>
+                        <h2 class="rit-titl"><i class="far fa-user"></i> Profile</h2>
+                         <table>
+                            <tr>
+                                <th style="font-weight: normal;">Nama</th>
+                                <td>= Nur Aisyah</td>
+                            </tr>
+                            <tr>
+                                <th style="font-weight: normal;">NIM</th>
+                                <td>= 21195043</td>
+                            </tr>
+                            <tr>
+                                <th style="font-weight: normal;">Kelas</th>
+                                <td>= Reguler pagi</td>
+                            </tr>
+                            <tr>
+                                <th style="font-weight: normal;">Semester</th>
+                                <td>= 5</td>
+                            </tr>
+                            <tr>
+                                <th style="font-weight: normal;">Mata Kuliah</th>
+                                <td>= Pemrograman Perangkat Bergerak</td>
+                            </tr>
+                            <br>
+                            <br>
+                            <tr>
+                                <th style="font-weight: normal;">Tujuan Belajar Mobile Programming PWA</th>
+                            </tr>
+                        </table>
+                        <p>Tujuan belajar Mobile Programming PWA adalah untuk menguasai pengembangan aplikasi web 
+                            progresif yang responsif, aman, dan performa tinggi yang dapat diakses dari berbagai perangkat. 
+                        </p>
+                        <h2 class="rit-titl"><i class="fas fa-users-cog"></i> Kolom Komentar </h2>
+                        <div class="work-exp">
+                            <form id="commentForm">
+                                <label for="nama">Nama:</label><br>
+                                    <input type="text" id="nama" name="nama" required><br><br>
+                                <label for="email">Email:</label><br>
+                                    <input type="text" id="email" name="email" required><br><br>
+                                <label for="komentar">Input Komentar :</label><br>
+                                    <textarea id="komentar" name="komentar" rows="4" cols="50" required></textarea><br><br>
+                                <input type="submit" value="Kirim Komentar">
+                            </form>
+                        </div>
+
+                        <div class="work-exp m-0" id="komentarKolom"></div>
+                        <div class="container">
+                            <button id="enableNotifications">🔔 Enable Notification</button>
+                            <br />
+                            <br />
+                            <div>
+                              <div id="token"></div>
+                              <div id="err"></div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/main.js"></script> 
+<script src="assets/js/indexDb.js"></script>
+</body>
+</html>
